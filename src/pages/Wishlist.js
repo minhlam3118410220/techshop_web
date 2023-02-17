@@ -6,76 +6,72 @@ import Container from "../components/Container";
 const Wishlist = () => {
   return (
     <>
-      <Meta title={"Wishlist"} />
-      <BreadCrumb title="Wishlist" />
+      <Meta title={"Danh Sách Yêu Thích"} />
+      <BreadCrumb title="Danh Sách Yêu Thích" />
       <Container class1="wishlist-wrapper home-wrapper-2 py-5">
         <div className="row">
-          <div className="col-3">
-            <div className="wishlist-card position-relative">
+
+        <div className="col-3">
+            <div className="compare-product-card position-relative">
               <img
                 src="images/cross.svg"
                 alt="cross"
                 className="position-absolute cross img-fluid"
               />
-              <div className="wishlist-card-image">
-                <img
-                  src="images/watch.jpg"
-                  className="img-fluid w-100"
-                  alt="watch"
-                />
+              <div className="product-card-image">
+                <img src="images/prod-c1.jpg" className="img-fluid"
+                alt="phone" />
               </div>
-              <div className="py-3 px-3">
+              <div className="compare-product-details">
                 <h5 className="title">
-                  Honor T1 7.0 1 GB RAM 8 GB ROM 7 Inch With Wi-Fi+3G Tablet
+                Máy tính bảng Samsung Galaxy Tab S7 FE
                 </h5>
-                <h6 className="price">$ 100</h6>
+                <h6 className="price mb-3 mt-3">12.990.000đ</h6>
               </div>
             </div>
           </div>
+
           <div className="col-3">
-            <div className="wishlist-card position-relative">
+            <div className="compare-product-card position-relative">
               <img
                 src="images/cross.svg"
                 alt="cross"
                 className="position-absolute cross img-fluid"
               />
-              <div className="wishlist-card-image">
-                <img
-                  src="images/watch.jpg"
-                  className="img-fluid w-100"
-                  alt="watch"
-                />
+              <div className="product-card-image">
+                <img src="images/prod-x2.jpg" className="img-fluid"
+                alt="phone" />
               </div>
-              <div className="py-3 px-3">
+              <div className="compare-product-details">
                 <h5 className="title">
-                  Honor T1 7.0 1 GB RAM 8 GB ROM 7 Inch With Wi-Fi+3G Tablet
+                Máy tính bảng Samsung Galaxy Tab S8 5G
                 </h5>
-                <h6 className="price">$ 100</h6>
+                <h6 className="price mb-3 mt-3">17.990.000đ</h6>
               </div>
             </div>
           </div>
+
           <div className="col-3">
-            <div className="wishlist-card position-relative">
+            <div className="compare-product-card position-relative">
               <img
                 src="images/cross.svg"
                 alt="cross"
                 className="position-absolute cross img-fluid"
               />
-              <div className="wishlist-card-image">
-                <img
-                  src="images/watch.jpg"
-                  className="img-fluid w-100"
-                  alt="watch"
-                />
+              <div className="product-card-image">
+                <img src="images/prod-x3.jpg" className="img-fluid"
+                alt="phone" />
               </div>
-              <div className="py-3 px-3">
+              <div className="compare-product-details">
                 <h5 className="title">
-                  Honor T1 7.0 1 GB RAM 8 GB ROM 7 Inch With Wi-Fi+3G Tablet
+                Điện thoại Samsung Galaxy S22 Ultra 5G 128GB
                 </h5>
-                <h6 className="price">$ 100</h6>
+                <h6 className="price mb-3 mt-3">23.990.000đ</h6>
               </div>
             </div>
           </div>
+
+          
         </div>
       </Container>
     </>

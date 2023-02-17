@@ -10,26 +10,27 @@ const OurStore = () => {
   const [grid, setGrid] = useState(4);
   return (
     <>
-      <Meta title={"Our Store"} />
-      <BreadCrumb title="Our Store" />
+      <Meta title={"Sản Phẩm"} />
+      <BreadCrumb title="Sản Phẩm" />
       <Container class1="store-wrapper home-wrapper-2 py-5">
         <div className="row">
           <div className="col-3">
             <div className="filter-card mb-3">
-              <h3 className="filter-title">Shop By Categories</h3>
+              <h3 className="filter-title">Danh Mục</h3>
               <div>
                 <ul className="ps-0">
-                  <li>Watch</li>
-                  <li>Tv</li>
-                  <li>Camera</li>
+                <li>Điện thoại</li>
                   <li>Laptop</li>
+                  <li>Máy Tính Bảng</li>
+                  <li>Tai Nghe</li>
+                  <li>Đồng Hồ</li>
                 </ul>
               </div>
             </div>
             <div className="filter-card mb-3">
-              <h3 className="filter-title">Filter By</h3>
+              <h3 className="filter-title">Sắp Xếp Theo</h3>
               <div>
-                <h5 className="sub-title">Availablity</h5>
+                <h5 className="sub-title">Tình Trạng</h5>
                 <div>
                   <div className="form-check">
                     <input
@@ -39,7 +40,7 @@ const OurStore = () => {
                       id=""
                     />
                     <label className="form-check-label" htmlFor="">
-                      In Stock (1)
+                     Còn Hàng (7)
                     </label>
                   </div>
                   <div className="form-check">
@@ -50,11 +51,11 @@ const OurStore = () => {
                       id=""
                     />
                     <label className="form-check-label" htmlFor="">
-                      Out of Stock(0)
+                      Hết Hàng (0)
                     </label>
                   </div>
                 </div>
-                <h5 className="sub-title">Price</h5>
+                <h5 className="sub-title">Khoảng Giá</h5>
                 <div className="d-flex align-items-center gap-10">
                   <div className="form-floating">
                     <input
@@ -63,7 +64,7 @@ const OurStore = () => {
                       id="floatingInput"
                       placeholder="From"
                     />
-                    <label htmlFor="floatingInput">From</label>
+                    <label htmlFor="floatingInput">Từ</label>
                   </div>
                   <div className="form-floating">
                     <input
@@ -72,14 +73,14 @@ const OurStore = () => {
                       id="floatingInput1"
                       placeholder="To"
                     />
-                    <label htmlFor="floatingInput1">To</label>
+                    <label htmlFor="floatingInput1">Đến</label>
                   </div>
                 </div>
-                <h5 className="sub-title">Colors</h5>
+                <h5 className="sub-title">Màu</h5>
                 <div>
                   <Color />
                 </div>
-                <h5 className="sub-title">Size</h5>
+                <h5 className="sub-title">Thương Hiệu</h5>
                 <div>
                   <div className="form-check">
                     <input
@@ -89,7 +90,7 @@ const OurStore = () => {
                       id="color-1"
                     />
                     <label className="form-check-label" htmlFor="color-1">
-                      S (2)
+                      Apple 
                     </label>
                   </div>
                   <div className="form-check">
@@ -100,46 +101,88 @@ const OurStore = () => {
                       id="color-2"
                     />
                     <label className="form-check-label" htmlFor="color-2">
-                      M (2)
+                      Sam Sung
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="color-1"
+                    />
+                    <label className="form-check-label" htmlFor="color-1">
+                      LG
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="color-1"
+                    />
+                    <label className="form-check-label" htmlFor="color-1">
+                      Sony 
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="color-1"
+                    />
+                    <label className="form-check-label" htmlFor="color-1">
+                      Dell
                     </label>
                   </div>
                 </div>
               </div>
             </div>
             <div className="filter-card mb-3">
-              <h3 className="filter-title">Product Tags</h3>
-              <div>
-                <div className="product-tags d-flex flex-wrap align-items-center gap-10">
-                  <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    Headphone
-                  </span>
-                  <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    Laptop
-                  </span>
-                  <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    Mobile
-                  </span>
-                  <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    Wire
-                  </span>
+              <h3 className="filter-title">Dịch Vụ và Khuyến Mãi</h3>
+              <div className="row align-items-center">
+                <div className="form-check ">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="color-1"
+                    />
+                    <label className="form-check-label" htmlFor="color-1">
+                     Giảm Giá
+                    </label>
+                 </div>
+                 <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="color-1"
+                    />
+                    <label className="form-check-label" htmlFor="color-1">
+                      Miễn Phí Vận Chuyển
+                    </label>
+                 </div>
+                 
+                 
                 </div>
-              </div>
+              
             </div>
             <div className="filter-card mb-3">
-              <h3 className="filter-title">Random Product</h3>
-              <div>
-                <div className="random-products mb-3 d-flex">
-                  <div className="w-50">
-                    <img
-                      src="images/watch.jpg"
-                      className="img-fluid"
-                      alt="watch"
-                    />
+              <h3 className="filter-title">Đánh giá</h3>
+              
+                <div className="random-products mb-2 d-flex ">
+                    <ReactStars
+                      count={5}
+                      size={24}
+                      value={5}
+                      edit={false}
+                      activeColor="#ffd700"
+                    />                  
                   </div>
-                  <div className="w-50">
-                    <h5>
-                      Kids headphones bulk 10 pack multi colored for students
-                    </h5>
+                  <div className="random-products mb-2 d-flex ">
                     <ReactStars
                       count={5}
                       size={24}
@@ -147,40 +190,47 @@ const OurStore = () => {
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <b>$ 300</b>
+                    <p className="mt-2 col-4">trở lên</p>
                   </div>
-                </div>
-                <div className="random-products d-flex">
-                  <div className="w-50">
-                    <img
-                      src="images/watch.jpg"
-                      className="img-fluid"
-                      alt="watch"
-                    />
-                  </div>
-                  <div className="w-50">
-                    <h5>
-                      Kids headphones bulk 10 pack multi colored for students
-                    </h5>
+
+                  <div className="random-products mb-2 d-flex ">
                     <ReactStars
                       count={5}
                       size={24}
-                      value={4}
+                      value={3}
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <b>$ 300</b>
+                    <p className="mt-2 col-4">trở lên</p>
                   </div>
-                </div>
-              </div>
-            </div>
+                  <div className="random-products mb-2 d-flex ">
+                    <ReactStars
+                      count={5}
+                      size={24}
+                      value={2}
+                      edit={false}
+                      activeColor="#ffd700"
+                    />
+                    <p className="mt-2 col-4">trở lên</p>
+                  </div>
+                  <div className="random-products mb-2 d-flex ">
+                    <ReactStars
+                      count={5}
+                      size={24}
+                      value={1}
+                      edit={false}
+                      activeColor="#ffd700"
+                    />
+                    <p className="mt-2 col-4">trở lên</p>
+                  </div>
+              </div>                   
           </div>
           <div className="col-9">
             <div className="filter-sort-grid mb-4">
               <div className="d-flex justify-content-between align-items-center">
                 <div className="d-flex align-items-center gap-10">
                   <p className="mb-0 d-block" style={{ width: "100px" }}>
-                    Sort By:
+                    Sắp Xếp:
                   </p>
                   <select
                     name=""
@@ -188,20 +238,20 @@ const OurStore = () => {
                     className="form-control form-select"
                     id=""
                   >
-                    <option value="manual">Featured</option>
-                    <option value="best-selling">Best selling</option>
-                    <option value="title-ascending">Alphabetically, A-Z</option>
+                    <option value="manual">Nổi Bật</option>
+                    <option value="best-selling">Bán Chạy</option>
+                    <option value="best-selling">Mới Nhất</option>
+                    <option value="title-ascending">Từ A-Z</option>
                     <option value="title-descending">
-                      Alphabetically, Z-A
+                      Từ Z-A
                     </option>
-                    <option value="price-ascending">Price, low to high</option>
-                    <option value="price-descending">Price, high to low</option>
-                    <option value="created-ascending">Date, old to new</option>
-                    <option value="created-descending">Date, new to old</option>
+                    <option value="price-ascending">Giá: Thấp đến Cao</option>
+                    <option value="price-descending">Giá: Cao đến Thấp</option>
+                 
                   </select>
                 </div>
                 <div className="d-flex align-items-center gap-10">
-                  <p className="totalproducts mb-0">21 Products</p>
+                  <p className="totalproducts mb-0">30 Sản Phẩm</p>
                   <div className="d-flex gap-10 align-items-center grid">
                     <img
                       onClick={() => {

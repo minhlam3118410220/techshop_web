@@ -14,14 +14,14 @@ const Header = () => {
           <div className="row">
             <div className="col-6">
               <p className="text-white mb-0">
-                Free Shipping Over $100 & Free Returns
+                Miễn phí vận chuyển hóa đơn trên 2.000.000đ
               </p>
             </div>
             <div className="col-6">
               <p className="text-end text-white mb-0">
                 Hotline:
-                <a className="text-white" href="tel:+91 8264954234">
-                  +91 8264954234
+                <a className="text-white" href="tel:+84 931321813">
+                  +84 931321813
                 </a>
               </p>
             </div>
@@ -33,7 +33,7 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-2">
               <h2>
-                <Link className="text-white">Dev Corner</Link>
+                <Link to="/" className="text-white">LinF Tech</Link>
               </h2>
             </div>
             <div className="col-5">
@@ -41,7 +41,7 @@ const Header = () => {
                 <input
                   type="text"
                   className="form-control py-2"
-                  placeholder="Search Product Here..."
+                  placeholder="Tìm kiếm sản phẩm..."
                   aria-label="Search Product Here..."
                   aria-describedby="basic-addon2"
                 />
@@ -59,7 +59,7 @@ const Header = () => {
                   >
                     <img src={compare} alt="compare" />
                     <p className="mb-0">
-                      Compare <br /> Products
+                      So Sánh <br /> Sản Phẩm
                     </p>
                   </Link>
                 </div>
@@ -70,7 +70,7 @@ const Header = () => {
                   >
                     <img src={wishlist} alt="wishlist" />
                     <p className="mb-0">
-                      Favourite <br /> wishlist
+                      Danh Sách <br /> Yêu Thích
                     </p>
                   </Link>
                 </div>
@@ -81,7 +81,7 @@ const Header = () => {
                   >
                     <img src={user} alt="user" />
                     <p className="mb-0">
-                      Log in <br /> My Account
+                      Đăng Nhập <br /> Tài Khoản
                     </p>
                   </Link>
                 </div>
@@ -93,7 +93,7 @@ const Header = () => {
                     <img src={cart} alt="cart" />
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
-                      <p className="mb-0">$ 500</p>
+                      <p className="mb-0">0 Đ</p>
                     </div>
                   </Link>
                 </div>
@@ -118,7 +118,7 @@ const Header = () => {
                     >
                       <img src={menu} alt="" />
                       <span className="me-5 d-inline-block">
-                        Shop Categories
+                      Danh Mục 
                       </span>
                     </button>
                     <ul
@@ -127,17 +127,27 @@ const Header = () => {
                     >
                       <li>
                         <Link className="dropdown-item text-white" to="">
-                          Action
+                          Điện Thoại
                         </Link>
                       </li>
                       <li>
                         <Link className="dropdown-item text-white" to="">
-                          Another action
+                          Laptop
                         </Link>
                       </li>
                       <li>
                         <Link className="dropdown-item text-white" to="">
-                          Something else here
+                          Máy Tính Bảng
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item text-white" to="">
+                          Tai Nghe
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item text-white" to="">
+                          Đồng hồ
                         </Link>
                       </li>
                     </ul>
@@ -145,10 +155,10 @@ const Header = () => {
                 </div>
                 <div className="menu-links">
                   <div className="d-flex align-items-center gap-15">
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/product">Our Store</NavLink>
-                    <NavLink to="/blogs">Blogs</NavLink>
-                    <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to="/">Trang Chủ</NavLink>
+                    <NavLink to="/product">Sản Phẩm</NavLink>
+                    <NavLink to="/blogs">Tin Tức</NavLink>
+                    <NavLink to="/contact">Liên Hệ</NavLink>
                   </div>
                 </div>
               </div>
